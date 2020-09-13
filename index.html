@@ -1,67 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>SHOP</title>
+  </head>
 
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <title>SHOP</title>
-</head>
-
-<body>
-  <!-- 
+  <body>
+    <!-- 
         ========================
         Header
         ========================
      -->
-  <header id="header" class="header">
-    <!-- Navigation -->
-    <div class="navigation">
-      <div class="nav__header">
-        <div class="nav__logo">
-          <h1>Shopee</h1>
-        </div>
+    <header id="header" class="header">
+      <!-- Navigation -->
+      <div class="navigation">
+        <div class="container">
+          <nav class="nav__center">
+            <div class="nav__header">
+              <div class="nav__logo">
+                <h1>SHOPI<span>Q</span></h1>
+              </div>
 
-        <div class="nav__hamburger">
-          <span>
-            <svg>
-              <use xlink:href="./images/sprite.svg#icon-menu"></use>
-            </svg>
-          </span>
+              <div class="nav__hamburger">
+                <span>
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-menu"></use>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Shop</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Women</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Menu</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Contact</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Login</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Register</a>
+                </li>
+              </ul>
+
+              <ul class="nav__icons">
+                <a href="#" class="icon__item">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-search"></use>
+                  </svg>
+                </a>
+
+                <a href="#" class="icon__item">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#icon-user"></use>
+                  </svg>
+                </a>
+
+                <a href="#" class="icon__item">
+                  <svg>
+                    <use
+                      xlink:href="./images/sprite.svg#icon-shopping-basket"
+                    ></use>
+                  </svg>
+                  <span>2</span>
+                </a>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
 
-      <div class="nav__menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Home</a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#" class="nav__link">Shop</a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#" class="nav__link">Women</a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#" class="nav__link">Menu</a>
-          </li>
-
-          <li class="nav__item">
-            <a href="#" class="nav__link">Contact</a>
-          </li>
-        </ul>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero__content">
+          <h1>
+            <span
+              >Get <span class="color">50%</span> off your first shopping
+              with</span
+            >
+            <span>Shopiq online shop</span>
+          </h1>
+          <a href="#" class="btn btn-hero">shop now</a>
+        </div>
       </div>
-    </div>
-  </header>
-</body>
+    </header>
 
+    <!-- Main -->
+    <main>
+      <!-- New Arrival -->
+      <section class="section new__arrival">
+        <div class="container arrival__top">
+          <div class="title">
+            <h1 class="primary__title">New Arrival</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
