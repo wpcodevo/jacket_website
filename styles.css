@@ -21,6 +21,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -307,6 +308,10 @@ h4 {
     fill: var(--white);
   }
 
+  .nav__menu .menu__top .close__toggle {
+    cursor: pointer;
+  }
+
   .nav__menu .menu__top {
     display: flex;
     align-items: center;
@@ -414,6 +419,41 @@ h4 {
   background-color: var(--default-color);
 }
 
+.goto__next {
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+  transform: translate(-50%, 0);
+  background-color: var(--default-color);
+  padding: 1rem;
+  border-radius: 50%;
+  animation: bounce 2s linear infinite;
+}
+
+.goto__next svg {
+  height: 1.8rem;
+  width: 1.8rem;
+  fill: var(--white);
+}
+
+.goto__next span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 12%;
+  }
+  50% {
+    bottom: 7%;
+  }
+  100% {
+    bottom: 12%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hero__content h1 {
     font-size: 4rem;
@@ -442,6 +482,7 @@ h4 {
 
 .title {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .primary__title {
@@ -479,12 +520,6 @@ h4 {
 @media only screen and (max-width: 768px) {
   .arrival__center {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 567px) {
-  .arrival__center {
-    grid-template-columns: 25rem;
   }
 }
 
@@ -535,8 +570,32 @@ h4 {
   background-color: var(--default-color);
   color: var(--grey-color);
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
 }
+
+@media only screen and (max-width: 567px) {
+  .product .img__container {
+    height: 15rem;
+  }
+
+  .rating svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .product__bottom a:link,
+  .product__bottom a:visited {
+    display: inline-block;
+    padding: 0.6rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  .product__bottom h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =========== Cart Slide =========== */
 
 .cart__slide {
   padding-bottom: 30rem;
@@ -892,3 +951,27 @@ h4 {
     padding: 0.5rem 2.3rem;
   }
 }
+
+/* ============== Featured ============== */
+.featured__center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 0;
+}
+
+@media only screen and (max-width: 996px) {
+  .featured__center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .featured__center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* @media only screen and (max-width: 567px) {
+  .featured__center {
+    grid-template-columns: 1fr;
+  }
+} */
