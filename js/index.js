@@ -35,14 +35,15 @@ const navBar = document.querySelector(".navigation");
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
 Array.from(scrollLinks).forEach(link => {
-  // Prevent Default
-
   link.addEventListener("click", e => {
+    // Prevent Default
+    e.preventDefault();
+
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     const navHeight = navBar.getBoundingClientRect().height;
     const fixNav = navBar.classList.contains("fix__nav");
-    let position = element.offsetTop;
+    let position = element.offsetTop - navHeight;
 
     if (!fixNav) {
       position = position - navHeight;
