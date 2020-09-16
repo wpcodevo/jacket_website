@@ -43,7 +43,6 @@ Array.from(scrollLinks).forEach(link => {
     const navHeight = navBar.getBoundingClientRect().height;
     const fixNav = navBar.classList.contains("fix__nav");
     let position = element.offsetTop;
-    console.log(position);
 
     if (!fixNav) {
       position = position - navHeight;
